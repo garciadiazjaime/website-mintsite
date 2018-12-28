@@ -1,0 +1,22 @@
+{
+  "name": "website-mintsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "google:clean": "gsutil -m rm -r gs://www.mintitmedia.com/resources",
+    "google:upload": "gsutil -m cp -r ./index.html gs://www.mintitmedia.com && gsutil -m cp -r ./resources gs://www.mintitmedia.com/resources",
+    "deploy": "npm run google:clean && npm run google:upload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garciadiazjaime/website-mintsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garciadiazjaime/website-mintsite/issues"
+  },
+  "homepage": "https://github.com/garciadiazjaime/website-mintsite#readme"
+}

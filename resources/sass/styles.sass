@@ -1,0 +1,173 @@
+@import "_base"
+
+/* ******************* GENERAL ********************** */
+.vertical_aligner
+	display: inline-block
+	margin: 30px 0
+	padding: 0
+	width: 1%
+	vertical-align: middle
+	box-sizing: border-box
+.vertical_container
+	display: inline-block
+	margin: 30px 0
+	width: 98%
+	vertical-align: middle
+.container
+	margin: 0 auto
+	max-width: 1024px
+span.logo
+	margin-right: 15px
+	display: inline-block
+	vertical-align: middle
+a
+	cursor:pointer
+	&:hover
+		text-decoration: none
+/* ******************* NAVBAR ********************** */
+.navbar-brand
+	cursor: pointer
+
+/* ******************* BANNER ********************** */
+#banner
+	background-size: cover
+	min-height: 440px
+	width: 100%
+	text-align: center
+	margin-top: 51px
+	a
+		@include border-radius(4px)
+		display: inline-block
+		margin: 0 auto
+
+/* ******************* SERVICES ********************** */
+#services
+	div
+		.icon
+			display: block
+			margin: 0 auto
+	h2
+		text-align: center
+	p
+		@extend %lato_light
+		color: #666666
+		font-size: 18px
+		text-align: center
+		width: 90%
+		margin: 20px auto
+/* ******************* WORK ********************** */
+#work
+	a
+		img
+			display: block
+			width: 100%
+		h2
+			font-size: 20px
+			margin: 16px auto 0
+		h3
+			font-size: 18px
+			padding: 0
+			margin: 0 auto 20px
+
+
+/* ******************* CONTACT ********************** */
+#contact
+	font-size: 18px
+	.about
+		p
+			@extend %lato_light
+			padding: 5px 10%
+	.collaborate
+		h2
+			font-size: 18px
+			margin-top: 10px
+			margin-bottom: 20px
+			padding-left: 10%
+			min-width: 225px
+		p
+			margin-top: 0
+			padding-left: 10%
+		a
+			display: block
+			padding: 10px 20px 10px 10%
+			margin: 0
+		.sm
+			display: inline-block
+			padding: 3px 11px 0
+			@include border-radius(4px)
+			margin-right: 10px
+	form
+		input, textarea
+			border: none
+			padding: 5px 10px
+			margin: 4px 0
+			margin-left: 10%
+			border: none
+			width: 80%
+			&:focus
+				@include box-shadow(inset 0 0 8px #28d7a9)
+		input[type=submit]
+			text-align: left
+			padding: 10px
+		.label
+			margin-left: 10%
+		#form-messages
+			width: 80%
+			margin: 10px 0 0 10%
+
+/* ******************* FOOTER ********************** */
+#footer
+	bottom: 0
+	width: 100%
+	margin-top: -40px
+	p
+		text-align: center
+		padding: 10px 0
+		margin: 0
+/* ******************* RESPONSIVE ********************** */
+@media screen and (max-width: 767px)
+	.section
+		h1
+			font-size: 30px
+			margin: 0 auto 30px
+	#banner
+		h1
+			font-size: 40px
+			span
+				font-size: 30px
+		p
+			font-size: 18px
+			width: 75%
+		a
+			font-size: 16px
+	#services
+		div
+			h2
+				text-align: left
+				margin-top: 0
+				font-size: 18px
+			p
+				text-align: left
+				font-size: 16px
+				width: 100%
+		.row
+			.row
+				margin-bottom: 60px
+	#work
+		h1
+			text-align: center
+		a
+			.img_container
+				margin-bottom: 60px
+				height: 300px
+	#contact
+		div
+			margin-bottom: 40px
+
+
+
+
+
+
+
+

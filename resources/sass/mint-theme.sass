@@ -1,0 +1,210 @@
+@import "compass/css3/box-shadow"
+@import "compass/css3/border-radius"
+/* ******************* GENERAL ********************** */
+span.logo
+	background: url('../img/sprite.png') no-repeat left -175px
+	width: 30px
+	height: 35px
+.section
+	h1
+		font-weight: normal
+		margin: 0 auto 70px
+		font-size: 50px
+		@extend %lato_bold
+		text-align: center
+/* ******************* NAVBAR ********************** */
+.navbar
+	background: #012a33
+.nav
+	>li
+		>a
+			padding-top: 20px
+			color: #e5f6f3
+			&:hover
+				color: #FFF
+				background-color: #073a42
+			&:focus
+				background: #073a42
+.navbar-brand
+	padding: 11px 8px 0
+	color: #fff
+	@extend %ge_inspira
+	font-size: 25px
+	text-transform: uppercase
+	&:hover
+		color: #FFF
+	span
+		display: inline-block
+		vertical-align: middle
+.navbar-toggle
+	.icon-bar
+		background: #93e1d5
+/* ******************* BANNER ********************** */
+#banner
+	background: url('../img/banner_bkg.jpg') no-repeat center center
+	h1
+		color: #FFF
+		@extend %lato_light
+		font-size: 70px
+		margin-bottom: 90px
+		text-shadow: 2px 2px 20px rgba(1, 42, 51, .5)
+		span
+			color: #96ffdc
+			font-size: 60px
+	p
+		@extend %lato_light
+		text-align: center
+		width: 60%
+		margin: 0 auto 30px
+		font-size: 22px
+		color: #012a33
+		.blue1
+			color: #007c41
+		.blue2
+			color: #006660
+		.blue3
+			color: #014659
+	a
+		@extend %lato
+		background: #012a33
+		padding: 12px 20px
+		font-size: 18px
+		color: #93e1d5
+		&:hover
+			background: #014659
+/* ******************* SERVICES ********************** */
+#services
+	h1
+		color: #d5d5d5
+	div
+		.icon
+			background: url(../img/sprite.png)
+			margin: 0 auto
+		.analysis
+			background-position: left top
+		.websites
+			background-position: center top
+			width: 140px
+		.systems
+			background-position: right top
+	h2
+		color: #014659
+		font-size: 25px
+		text-transform: uppercase
+	.c_soon
+		@extend %lato_it
+		color: #28d7a9
+/* ******************* SERVICES ********************** */
+#work
+	background: #e0e0e0
+	h1
+		color: #fff
+	a
+		color: #4f4f4f
+		h2
+			@extend %lato
+		h3
+			@extend %lato
+			color: #05667c
+		.img_container
+			height: 400px
+			width: 100%
+			overflow: hidden
+
+		&:hover
+			text-decoration: none
+			.img_container
+				@include box-shadow(0 0 20px rgba(0, 0, 0, .3))
+			h2
+				background-position: right bottom
+			h2, h3
+				text-shadow: 1px 1px 4px rgba(0, 0, 0, .2)
+/* ******************* CONTACT ********************** */
+#contact
+	background: #012e38
+	color: #FFF
+	h1
+		color: #034b5c
+	.about
+		h2
+			font-size: 25px
+			@extend %ge_inspira
+			margin-top: 0
+			margin-left: 10%
+			text-transform: uppercase
+			span
+				display: inline-block
+				vertical-align: middle
+		p
+			@extend %lato_light
+	.collaborate
+		h2
+			color: #b2b2b2
+			@extend %lato
+			text-transform: uppercase
+		p
+			@extend %lato_light
+		h3
+			color: #FFF
+			@extend %lato_it
+			font-size: 24px
+			padding-left: 10%
+		a
+			color: #93e1d5
+			&:hover
+				text-decoration: none
+				color: #baf7eb
+		.phone
+			margin-top: 10px
+		.sm
+			background: #93e1d5
+			color: #012a33
+			@extend %lato_bold
+	form
+		input, textarea
+			color: #014659
+			&:focus
+				outline: #28d7a9 solid 1px
+		input[type=submit]
+			@extend %lato_bold
+			text-transform: uppercase
+			background: #93e1d5 url("../img/sprite.png") no-repeat right -290px
+			&:hover
+				background-color: #baf7eb
+		.required-field
+			border: 2px solid #e37b00
+		#form-messages
+			color: #e37b00
+			background: #fbebc6
+			border: 2px solid #e37b00
+/* ******************* FOOTER ********************** */
+#footer
+	background: #012a33
+	p
+		color: #93e1d5
+/* ******************* RESPONSIVE ********************** */
+@media screen and (max-width: 767px)
+	#services
+		div
+			.icon
+				height: 60px
+				width: 70px
+			.analysis
+				background-position: left -107px
+			.websites
+				background-position: center -107px
+				width: 80px
+			.systems
+				background-position: right -107px
+
+
+
+
+
+
+
+
+
+
+
+

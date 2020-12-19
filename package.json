@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "google:clean": "gsutil -m rm -r gs://www.mintitmedia.com/resources",
-    "google:upload": "gsutil -m cp -r ./index.html gs://www.mintitmedia.com && gsutil -m cp -r ./resources gs://www.mintitmedia.com/resources",
+    "google:upload": "gsutil -m cp -r ./index.html gs://www.mintitmedia.com && gsutil -m cp -r ./sitemap.xml gs://www.mintitmedia.com && gsutil -m cp -r ./favicon.ico gs://www.mintitmedia.com && gsutil -m cp -r ./resources gs://www.mintitmedia.com/resources",
     "deploy": "npm run google:clean && npm run google:upload"
   },
   "repository": {
